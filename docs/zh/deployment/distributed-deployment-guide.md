@@ -750,7 +750,7 @@ docker pull apolloconfig/apollo-configservice:${version}
 docker run -p 8080:8080 \
     -e SPRING_DATASOURCE_URL="jdbc:mysql://fill-in-the-correct-server:3306/ApolloConfigDB?characterEncoding=utf8" \
     -e SPRING_DATASOURCE_USERNAME=FillInCorrectUser -e SPRING_DATASOURCE_PASSWORD=FillInCorrectPassword \
-    -d -v /tmp/logs:/opt/logs --name apollo-configservice apolloconfig/apollo-configservice:${version}
+    -d -v /tmp/logs:/Users/lc-pc2/logs/apollo --name apollo-configservice apolloconfig/apollo-configservice:${version}
 ```
 
 参数说明：
@@ -774,7 +774,7 @@ docker pull apolloconfig/apollo-adminservice:${version}
 docker run -p 8090:8090 \
     -e SPRING_DATASOURCE_URL="jdbc:mysql://fill-in-the-correct-server:3306/ApolloConfigDB?characterEncoding=utf8" \
     -e SPRING_DATASOURCE_USERNAME=FillInCorrectUser -e SPRING_DATASOURCE_PASSWORD=FillInCorrectPassword \
-    -d -v /tmp/logs:/opt/logs --name apollo-adminservice apolloconfig/apollo-adminservice:${version}
+    -d -v /tmp/logs:/Users/lc-pc2/logs/apollo --name apollo-adminservice apolloconfig/apollo-adminservice:${version}
 ```
 
 参数说明：
@@ -800,7 +800,7 @@ docker run -p 8070:8070 \
     -e SPRING_DATASOURCE_USERNAME=FillInCorrectUser -e SPRING_DATASOURCE_PASSWORD=FillInCorrectPassword \
     -e APOLLO_PORTAL_ENVS=dev,pro \
     -e DEV_META=http://fill-in-dev-meta-server:8080 -e PRO_META=http://fill-in-pro-meta-server:8080 \
-    -d -v /tmp/logs:/opt/logs --name apollo-portal apolloconfig/apollo-portal:${version}
+    -d -v /tmp/logs:/Users/lc-pc2/logs/apollo --name apollo-portal apolloconfig/apollo-portal:${version}
 ```
 
 参数说明：

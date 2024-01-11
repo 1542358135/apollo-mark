@@ -46,7 +46,7 @@ server:
 
 logging:
   file:
-    name: /opt/logs/apollo-portal.log
+    name: /Users/lc-pc2/logs/apollo/apollo-portal.log
 
 management:
   health:

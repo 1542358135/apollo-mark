@@ -55,7 +55,7 @@ The following is an example of how to start `apollo-configService` and `apollo-a
 
 >Note 1: replace spring.datasource related configuration with your own database connection information, note that the database is `ApolloConfigDB`.
 >
->Note 2: The default log output of the program is /opt/logs/100003171/apollo-assembly.log, if you need to modify the log file path, you can add the `logging.file.name` parameter, as follows.
+>Note 2: The default log output of the program is /Users/lc-pc2/logs/apollo/100003171/apollo-assembly.log, if you need to modify the log file path, you can add the `logging.file.name` parameter, as follows.
 >
 >-Dlogging.file.name=/your-path/apollo-assembly.log
 
@@ -121,7 +121,7 @@ The following is an example of how to start `apollo-portal` locally with Intelli
 >
 >Note 4: Here server.port=8070 is specified because `apollo-configservice` starts on port 8080, so here `apollo-portal` is configured to start on port 8070.
 >
->Note 5: The default log output of the program is /opt/logs/100003173/apollo-portal.log. If you need to modify the log file path, you can add the `logging.file.name` parameter as follows.
+>Note 5: The default log output of the program is /Users/lc-pc2/logs/apollo/100003173/apollo-portal.log. If you need to modify the log file path, you can add the `logging.file.name` parameter as follows.
 >
 >-Dlogging.file.name=/your-path/apollo-portal.log
 
